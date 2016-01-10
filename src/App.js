@@ -1,4 +1,5 @@
 import angular from "angular";
+import OmdbApiService from "./services/OmdbApiService";
 
 class AppController {
   constructor() {
@@ -9,5 +10,6 @@ class AppController {
 const app = angular.module("app", []);
 
 app.controller("AppController", AppController);
+app.service("omdbApiService", OmdbApiService);
 
 export default app;
